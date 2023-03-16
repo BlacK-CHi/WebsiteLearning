@@ -1,0 +1,35 @@
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+body{
+    font-family: 'Galmuri11';
+}
+
+webprog{
+    background-color:rgb(255, 146, 146);
+}
+
+logic{
+    background-color:rgb(155, 255, 146)
+}
+
+datastr{
+    background-color: rgb(248, 255, 146);
+}
+
+linearalg{
+    background-color: rgb(146, 175, 255);
+}
+
+futureway{
+    background-color: blueviolet;
+    color: white
+}
+
+creative{
+    background-color: palevioletred;
+    color:white
+}
+
+doing{
+    background-color: chartreuse;
+}
