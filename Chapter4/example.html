@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<html>
+    <head>
+        <title>입력 폼 제작 실습</title>
+    </head>
+
+    <body>
+        <form>
+            
+            <fieldset>
+                <legend>약관</legend>
+                <!--약관동의 탭 (textarea를 사용하여 약관 내용을 출력한다. 여기서는 Lorem Ipsum을 사용)-->
+                <textarea>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsa repudiandae consequuntur veniam ipsum consectetur quas facere dicta corrupti perspiciatis sequi ex distinctio, earum magni praesentium ad nostrum error vel?</textarea>
+                <br>
+                <input id="okay" type="checkbox" name="checkbox" value="checkbox">
+                <label for="okay">위 약관에 동의합니다.</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>회원 가입</legend>
+                <!--하나의 Fieldset으로 여러 개의 입력 양식을 묶어서 만든다.-->
+
+                <!--회원가입 양식 (이름, 주소, 전화번호, 이메일)-->
+                <table>
+                    <tr>
+                        <td><label for="name">이름</label></td>
+                        <td><input id="name" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">주소</label></td>
+                        <td><input id="address" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">전화번호</label></td>
+                        <td><input id="phone" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">이메일</label></td>
+                        <td><input id="mail" type="text"></td>
+                    </tr>
+                </table>
+
+                <!--드롭다운 목록 (직업 선택)-->
+                <hr>
+                <label for="occupation">직업 </label>
+                <select>
+                    <option>학생</option>
+                    <option>IT 종사자</option>
+                    <option>농업 종사자</option>
+                    <option>전문직</option>
+                    <option>무직</option>
+                </select>
+
+            </fieldset>
+        </form>
+    </body>
