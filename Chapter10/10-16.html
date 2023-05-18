@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traditional Event - Default Event</title>
+    <script>
+        window.onload = function () {
+            //button ID를 가진 객체를 선택하여 js 내부의 임의의 변수로 지정
+            var button = document.getElementById('button');
+
+            //클릭 시 발생하는 이벤트를 제거한다 (return false;)
+            button.onclick = function () {
+                return false;
+            };
+        };
+    </script>
+</head>
+<body>
+    <!--JS에 의해 버튼의 기본 이벤트가 제거당했기 때문에, 눌러도 동작하지 않음.-->
+    <a id="button" href="http://hanb.co.kr">버튼</a>
+</body>
+</html>

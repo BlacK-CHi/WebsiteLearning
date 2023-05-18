@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Basic</title>
+    <script>
+        //페이지 로드 시 바로 시작 (Event)
+        window.onload = function () {
+            //for문으로 i값을 1씩 증가시키면서, output에 Header-@ 형태의 문자열을 추가함
+            var output = '';
+            for (var i = 0; i < 10; i++) {
+                output += '<h1>Header - ' + i + '</h1>';
+            }
+
+            //구성이 끝난 output의 내용을 문서에 넣음 (문서 내용 조작)
+            document.body.textContent = output;
+        };
+    </script>
+</head>
+<body>
+<!--문서 내부에는 아무 내용도 없지만, 실행 시 문자열이 표시됨.-->
+</body>
+</html>

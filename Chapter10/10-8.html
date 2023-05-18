@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Basic</title>
+    <script>
+        //페이지 로드 시 바로 시작 (Event)
+        window.onload = function () {
+            //변수를 사용하여, image라는 ID를 가진 객체를 선택
+            var image = document.getElementById('image');
+            image.src = 'http://placehold.it/300x200'; //이미지 내용을 변경
+            image.width = 300;
+            image.height = 200;
+        };
+    </script>
+</head>
+<body>
+    <img id="image"> <!--html부에서는 다른 속성을 지정하지 않았지만, js 이벤트를 통해 수정된 내용이 출력됨-->
+</body>
+</html>

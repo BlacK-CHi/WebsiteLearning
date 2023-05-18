@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline Event</title>
+    <script>
+        //버튼 객체에 alert를 직접 연결하지 않고, 이벤트를 호출하도록 함.
+        function buttonClick() {
+            alert('버튼 클릭됨.');
+        }
+    </script>
+</head>
+<body>
+    <button onclick="buttonClick()">버튼</button> <!--buttonClick()에 의해 클릭 시 alert가 발생함-->
+</body>
+</html>

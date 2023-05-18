@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Basic</title>
+    <script>
+        window.onload = function () {
+            //문서의 body에 특정 속성과 그 속성값을 각각 지정
+            document.body.setAttribute('data-custom', 'value');
+
+            //data-custom의 속성값 value를 추출하여 변수에 저장 후 출력
+            var dataCustom = document.body.getAttribute('data-custom');
+            document.write(dataCustom);
+        };
+    </script>
+</head>
+<body>
+    <!--html 내부에는 아무 내용도 없지만, 추출된 속성값인 value가 출력됨-->
+</body>
+</html>
