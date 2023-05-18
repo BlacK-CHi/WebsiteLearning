@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traditional Event</title>
+</head>
+<body>
+    <button id="button">버튼 - </button>
+    <script>
+        //버튼이 눌렸을 때의 이벤트를 연결, 버튼이 눌리면 ID가 button인 객체를 수정
+        document.getElementById('button').onclick = function () {
+            this.textContent = this.textContent + '★'; //해당 객체의 내용 뒤에 별을 하나씩 추가한다.
+        };
+    </script>
+</body>
+</html>

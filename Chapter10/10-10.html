@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>	
+	<head>
+		<title>Clock</title>
+		<script>
+			window.onload = function () {
+				//시간 정보를 표시할 객체(clock)를 변수를 사용하여 지정
+				var clock = document.getElementById('clock');
+
+				setInterval(function () {
+					var now = new Date(); //현재 시간
+					clock.innerHTML = now.toString(); //HTML 내부의 clock 객체 값을 수정시킴
+				}, 1000); //1초마다 코드를 실행시켜 시계를 업데이트함
+			};
+		</script>
+	</head>
+	<body>
+		<h1 id="clock"></h1> <!--페이지를 불러올 경우 현재 시간이 표시 및 업데이트됨-->
+	</body>
+</html>
